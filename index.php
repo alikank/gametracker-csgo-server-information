@@ -19,9 +19,9 @@ echo verial("https://cache.gametracker.com/components/html0/?host=$ip:27015");
 $giris = file_get_contents($giris, 0, $c);
 
 
-  preg_match_all('@<div class="info_line_right">(.*?)</div>@si',$giris,$yaz2);
-  preg_match_all('@<div class="server_name">(.*?)</div>@si',$giris,$yaz3);
-  preg_match_all('@<div class="item_float_right">(.*?)</div>@si',$giris,$yaz1);
+  preg_match_all('@<div class="info_line_right">(.*?)</div>@s',$giris,$yaz2);
+  preg_match_all('@<div class="server_name">(.*?)</div>@s',$giris,$yaz3);
+  preg_match_all('@<div class="item_float_right">(.*?)</div>@s',$giris,$yaz1);
   
   
 //sunucu ismi   
